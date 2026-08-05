@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foum Zguid Trip — Luxury Sahara Experiences | Morocco</title>
+<meta name="description" content="Foum Zguid Trip — private luxury desert expeditions, Erg Chegaga camel treks, candle-lit bivouacs and stargazing under the Saharan sky.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/cormorant-garamond@latest/latin-400-normal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/cormorant-garamond@latest/latin-500-normal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/cormorant-garamond@latest/latin-600-normal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/cormorant-garamond@latest/latin-700-normal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/cormorant-garamond@latest/latin-400-italic.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/cormorant-garamond@latest/latin-500-italic.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/jost@latest/latin-300-normal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/jost@latest/latin-400-normal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/jost@latest/latin-500-normal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/jost@latest/latin-600-normal.css">
+<style>
+:root{
+  --paper:#f5efe3; --card:#fbf7ee; --ink:#1c1712; --muted:#7c7160;
+  --bronze:#a1763a; --bronze2:#c49a58; --line:#e2d7c2;
+  --dark:#16110b; --ivory:#f3ead9; --soft:#cfc4ae;
+  --display:'Cormorant Garamond',serif; --body:'Jost',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-weight:300;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit}
+::selection{background:var(--bronze);color:#fff8ec}
+.wrap{width:min(1200px,92%);margin:0 auto}
+.eyebrow{display:inline-flex;align-items:center;gap:14px;font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;color:var(--bronze);font-weight:500}
+.eyebrow::before{content:"";width:44px;height:1px;background:var(--bronze)}
+.sec-title{font-family:var(--display);font-weight:500;font-size:clamp(2.2rem,4.6vw,3.6rem);line-height:1.12;margin-top:16px;color:var(--ink)}
+.sec-title em{font-style:italic;color:var(--bronze)}
+[data-reveal]{opacity:0;transform:translateY(36px);transition:opacity 1s ease,transform 1s ease}
+[data-reveal].revealed{opacity:1;transform:none}
+
+/* NAV */
+#topbar{position:fixed;top:0;left:0;right:0;z-index:120;padding:24px 0;color:var(--ivory);transition:.4s;border-bottom:1px solid transparent}
+#topbar.scrolled{background:rgba(245,239,227,.94);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);color:var(--ink);padding:14px 0;border-bottom-color:var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-family:var(--display);font-size:1.25rem;letter-spacing:.22em;text-transform:uppercase;font-weight:600;display:flex;align-items:center;gap:10px}
+.logo .dia{color:var(--bronze2);font-size:.9rem}
+.logo small{display:block;font-family:var(--body);font-size:.56rem;letter-spacing:.5em;color:var(--bronze);font-weight:500}
+.nav-links{display:flex;gap:32px;align-items:center}
+.nav-links a{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:inherit;opacity:.85;position:relative;padding:6px 0}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--bronze);transition:width .35s}
+.nav-links a:hover{opacity:1;color:var(--bronze)}
+.nav-links a:hover::after{width:100%}
+.nav-cta{padding:12px 26px}
+.burger{display:none;background:none;border:none;cursor:pointer;width:44px;height:40px;position:relative;z-index:130}
+.burger span{position:absolute;left:8px;right:8px;height:1.5px;background:currentColor;transition:.4s}
+.burger span:nth-child(1){top:14px}.burger span:nth-child(2){top:24px}
+.burger.active span:nth-child(1){top:19px;transform:rotate(45deg);background:var(--bronze)}
+.burger.active span:nth-child(2){top:19px;transform:rotate(-45deg);background:var(--bronze)}
+#sideMenu{position:fixed;inset:0;background:var(--paper);z-index:110;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;transform:translateY(-100%);transition:transform .55s cubic-bezier(.7,0,.3,1)}
+#sideMenu.open{transform:none}
+#sideMenu a{font-family:var(--display);font-size:1.7rem;color:var(--ink)}
+#sideMenu a:hover{color:var(--bronze)}
+#sideMenu .mm-ar{color:var(--bronze2);font-size:1rem}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:17px 36px;font-size:.76rem;letter-spacing:.26em;text-transform:uppercase;font-weight:500;cursor:pointer;transition:.35s;border:1px solid var(--bronze);background:none}
+.btn-solid{background:var(--bronze);color:#fff9ee}
+.btn-solid:hover{background:#8a6330;transform:translateY(-2px);box-shadow:0 14px 34px rgba(161,118,58,.3)}
+.btn-light{border-color:rgba(243,234,217,.6);color:var(--ivory)}
+.btn-light:hover{border-color:var(--bronze2);color:var(--bronze2);transform:translateY(-2px)}
+.btn-line{border-color:rgba(28,23,18,.35);color:var(--ink)}
+.btn-line:hover{border-color:var(--bronze);color:var(--bronze);transform:translateY(-2px)}
+
+/* HERO */
+#hero{position:relative;height:100vh;min-height:680px;overflow:hidden;display:flex}
+.hero-bg{position:absolute;inset:0;background:url('https://image.qwenlm.ai/public_source/1fddffd9-0ffd-43f8-95a3-f974706c66e8/132d416bc-ed70-4a62-9821-68e2a19d40f6.png') center 68%/cover no-repeat;animation:kenburns 22s ease-in-out infinite alternate}
+@keyframes kenburns{from{transform:scale(1)}to{transform:scale(1.12) translateY(-2.5%)}}
+.hero-shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(22,17,11,.9) 0%,rgba(22,17,11,.15) 45%,rgba(22,17,11,.35) 100%)}
+.hero-content{position:relative;z-index:2;margin:auto 0;width:min(1200px,92%);margin-left:auto;margin-right:auto;padding:120px 0 80px}
+.hero-ar{color:var(--bronze2);font-size:1.05rem;margin-bottom:18px}
+.hero-eyebrow{font-size:.72rem;letter-spacing:.42em;text-transform:uppercase;color:var(--ivory);font-weight:500;display:inline-flex;align-items:center;gap:16px}
+.hero-eyebrow::before{content:"";width:52px;height:1px;background:var(--bronze2)}
+.hero-content h1{font-family:var(--display);font-weight:500;font-size:clamp(3rem,7.4vw,5.8rem);line-height:1.05;color:var(--ivory);margin:24px 0 22px;max-width:760px}
+.hero-content h1 em{font-style:italic;color:var(--bronze2)}
+.hero-sub{max-width:560px;color:var(--soft);font-size:1.02rem;line-height:1.85;margin-bottom:40px}
+.hero-cta{display:flex;gap:18px;flex-wrap:wrap}
+.hero-scroll{position:absolute;bottom:0;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:10px;color:var(--soft);font-size:.62rem;letter-spacing:.4em;text-transform:uppercase}
+.hero-scroll .rail{width:1px;height:64px;background:rgba(243,234,217,.2);overflow:hidden;position:relative}
+.hero-scroll .rail::after{content:"";position:absolute;top:-40%;left:0;width:1px;height:40%;background:var(--bronze2);animation:drip 2.4s ease-in-out infinite}
+@keyframes drip{to{top:110%}}
+
+/* MARQUEE */
+.marquee{background:var(--dark);overflow:hidden;padding:20px 0;border-top:1px solid var(--line)}
+.marquee-track{display:flex;width:max-content;animation:scrollX 34s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee-group{display:flex;align-items:center;gap:56px;padding-right:56px}
+.marquee-group span{font-family:var(--display);font-style:italic;font-size:1.05rem;letter-spacing:.14em;color:var(--soft);white-space:nowrap}
+.marquee-group i{color:var(--bronze2);font-style:normal;font-size:.8rem}
+@keyframes scrollX{to{transform:translateX(-50%)}}
+
+/* ABOUT */
+#about{padding:130px 0 110px}
+.about-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:70px;align-items:center}
+.about-img{position:relative}
+.about-img .frame{position:absolute;inset:0;border:1px solid var(--bronze2);transform:translate(18px,18px)}
+.about-img img{position:relative;z-index:1;width:100%;height:520px;object-fit:cover}
+.about-txt p{color:var(--muted);line-height:1.95;font-size:.98rem;margin-bottom:18px}
+.about-txt p strong{color:var(--ink);font-weight:400}
+.signature{margin-top:26px;font-family:var(--display);font-style:italic;font-size:1.35rem;color:var(--bronze)}
+.signature small{display:block;font-family:var(--body);font-style:normal;font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-top:90px;border-top:1px solid var(--line);padding-top:56px}
+.stat{text-align:center}
+.stat-num{font-family:var(--display);font-size:clamp(2.2rem,4vw,3.2rem);color:var(--bronze);font-weight:500}
+.stat-num sup{font-size:.5em;color:var(--bronze2)}
+.stat-label{font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+
+/* EXPERIENCES */
+#experiences{padding:110px 0;background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.exp-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:56px}
+.exp-head p{max-width:380px;color:var(--muted);line-height:1.8;font-size:.94rem}
+.exp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.card{background:#fffdf8;border:1px solid var(--line);overflow:hidden;transition:transform .5s,box-shadow .5s;position:relative}
+.card:hover{transform:translateY(-10px);box-shadow:0 30px 60px rgba(28,23,18,.14)}
+.card-img{position:relative;height:250px;overflow:hidden}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s ease}
+.card:hover .card-img img{transform:scale(1.09)}
+.card-tag{position:absolute;top:16px;left:16px;z-index:2;background:rgba(22,17,11,.78);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);padding:7px 14px;font-size:.64rem;letter-spacing:.24em;text-transform:uppercase;color:var(--bronze2);border:1px solid rgba(196,154,88,.4)}
+.card-body{padding:28px 26px 24px}
+.card-title{font-family:var(--display);font-size:1.55rem;font-weight:600;line-height:1.2}
+.card-desc{color:var(--muted);font-size:.9rem;line-height:1.75;margin-top:12px}
+.card-foot{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);margin-top:22px;padding-top:18px}
+.price{font-family:var(--display);font-size:1.3rem;color:var(--bronze)}
+.price small{font-family:var(--body);font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-right:6px}
+.card-link{font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;color:var(--ink);transition:.3s;display:inline-flex;align-items:center;gap:8px}
+.card-link:hover{color:var(--bronze);gap:14px}
+
+/* CAMP */
+#camp{padding:130px 0;background:var(--dark);color:var(--ivory)}
+#camp .sec-title{color:var(--ivory)}
+.camp-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:80px;align-items:center}
+.camp-visual{position:relative;padding-bottom:70px}
+.camp-main{width:88%;height:520px;object-fit:cover;border:1px solid rgba(196,154,88,.4);padding:10px;background:var(--dark)}
+.camp-small{position:absolute;right:0;bottom:0;width:46%;border:6px solid var(--dark);box-shadow:0 24px 60px rgba(0,0,0,.6)}
+#camp .eyebrow{color:var(--bronze2)}
+#camp .eyebrow::before{background:var(--bronze2)}
+.amenities{display:grid;grid-template-columns:1fr 1fr;gap:16px 26px;margin-top:36px}
+.amenities li{list-style:none;display:flex;gap:12px;align-items:flex-start;color:var(--soft);font-size:.9rem;line-height:1.5}
+.amenities li::before{content:"✦";color:var(--bronze2);font-size:.7rem;margin-top:3px}
+.camp-note{margin-top:34px;padding:20px 24px;border:1px solid rgba(196,154,88,.3);background:rgba(255,255,255,.03);color:var(--soft);font-size:.88rem;line-height:1.8}
+.camp-note b{color:var(--bronze2);font-weight:500}
+
+/* GALLERY */
+#gallery{padding:110px 0}
+.g-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:215px;gap:14px;margin-top:56px}
+.g-item{position:relative;overflow:hidden;cursor:pointer}
+.g-item img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s ease,filter .6s}
+.g-item:hover img{transform:scale(1.07);filter:brightness(1.06)}
+.g-item figcaption{position:absolute;inset:auto 0 0 0;padding:40px 18px 14px;background:linear-gradient(to top,rgba(22,17,11,.85),transparent);font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;color:var(--bronze2);opacity:0;transform:translateY(10px);transition:.5s}
+.g-item:hover figcaption{opacity:1;transform:none}
+.g-w2{grid-column:span 2}
+.g-h2{grid-row:span 2}
+
+/* STORIES */
+#stories{padding:120px 0;background:var(--card);border-top:1px solid var(--line)}
+.story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:56px}
+.story{border:1px solid var(--line);background:#fffdf8;padding:38px 32px;position:relative;transition:.4s}
+.story:hover{transform:translateY(-6px);box-shadow:0 24px 50px rgba(28,23,18,.1)}
+.story .qmark{font-family:var(--display);font-size:4rem;line-height:1;color:var(--line);position:absolute;top:18px;right:26px}
+.stars-row{color:var(--bronze);letter-spacing:6px;font-size:.85rem}
+.story blockquote{font-family:var(--display);font-style:italic;font-size:1.18rem;line-height:1.65;color:var(--ink);margin:20px 0 26px}
+.story-author{font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;color:var(--bronze)}
+.story-origin{font-size:.68rem;color:var(--muted);margin-top:6px;letter-spacing:.14em}
+
+/* BOOKING */
+#book{padding:130px 0}
+.book-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:70px}
+.book-info p{color:var(--muted);line-height:1.9;font-size:.96rem;margin:20px 0 34px}
+.contact-row{display:flex;gap:18px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}
+.contact-row .ico{width:44px;height:44px;border:1px solid var(--bronze2);display:grid;place-items:center;color:var(--bronze);flex:none}
+.contact-row .lbl{font-size:.64rem;letter-spacing:.28em;text-transform:uppercase;color:var(--muted)}
+.contact-row .val{font-size:.95rem;color:var(--ink);margin-top:4px}
+.assurances{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.assurances span{border:1px solid var(--line);background:var(--card);padding:9px 16px;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.book-form{background:#fffdf8;border:1px solid var(--line);padding:46px 42px;box-shadow:0 30px 70px rgba(28,23,18,.08)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.field{margin-bottom:22px}
+.field label{display:block;font-size:.64rem;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.field input,.field select,.field textarea{width:100%;background:var(--paper);border:1px solid var(--line);color:var(--ink);padding:15px 16px;font-family:var(--body);font-size:.92rem;font-weight:300;transition:border-color .3s;border-radius:0;appearance:none}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--bronze)}
+.field textarea{resize:vertical;min-height:110px}
+.field select{background-image:linear-gradient(45deg,transparent 50%,var(--bronze) 50%),linear-gradient(135deg,var(--bronze) 50%,transparent 50%);background-position:calc(100% - 20px) 50%,calc(100% - 14px) 50%;background-size:6px 6px;background-repeat:no-repeat}
+.field input[type="date"]{color-scheme:light}
+.form-success{display:none;text-align:center;padding:60px 20px}
+.form-success .check{width:70px;height:70px;margin:0 auto;border:1px solid var(--bronze);border-radius:50%;display:grid;place-items:center;color:var(--bronze);font-size:1.6rem}
+.form-success .big{font-family:var(--display);font-size:2rem;color:var(--bronze);margin:18px 0 12px}
+.form-success p{color:var(--muted);line-height:1.8}
+
+/* FOOTER */
+footer{background:var(--dark);color:var(--soft);padding:80px 0 0}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:60px;padding-bottom:60px}
+.foot-brand p{color:var(--muted);font-size:.9rem;line-height:1.85;margin:18px 0 10px;max-width:340px}
+.foot-ar{color:var(--bronze2);font-size:.95rem}
+.foot-title{font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--bronze2);margin-bottom:26px;font-weight:500}
+.foot-links a{display:block;color:var(--muted);font-size:.9rem;padding:7px 0;transition:.3s}
+.foot-links a:hover{color:var(--bronze2);padding-left:8px}
+.foot-bottom{border-top:1px solid rgba(196,154,88,.2);padding:26px 0;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.72rem;letter-spacing:.18em;color:var(--muted)}
+.foot-bottom i{font-style:normal;color:var(--bronze2)}
+
+@media(max-width:1024px){
+  .exp-grid{grid-template-columns:repeat(2,1fr)}
+  .story-grid{grid-template-columns:1fr;max-width:640px;margin-left:auto;margin-right:auto}
+  .g-grid{grid-template-columns:repeat(2,1fr)}
+  .about-grid,.camp-grid,.book-grid{grid-template-columns:1fr;gap:56px}
+  .about-img img{height:420px}
+  .stats{grid-template-columns:repeat(2,1fr);gap:44px}
+}
+@media(max-width:768px){
+  .nav-links,.nav-cta{display:none}
+  .burger{display:block}
+  .exp-grid{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+  .book-form{padding:36px 26px}
+  .g-grid{grid-auto-rows:170px}
+  .foot-grid{grid-template-columns:1fr;gap:44px}
+  .camp-main{width:100%;height:400px}
+  .amenities{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header id="topbar">
+  <div class="wrap nav-inner">
+    <a href="#hero" class="logo"><span class="dia">✦</span><span>Foum Zguid<br><small>T R I P</small></span></a>
+    <nav class="nav-links">
+      <a href="#about">The Gateway</a>
+      <a href="#experiences">Experiences</a>
+      <a href="#camp">The Bivouac</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#stories">Stories</a>
+    </nav>
+    <a href="#book" class="btn btn-solid nav-cta">Reserve</a>
+    <button class="burger" id="burgerBtn" aria-label="Menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<div id="sideMenu">
+  <span class="mm-ar" dir="rtl">فوم زكيد تريب</span>
+  <a href="#about">The Gateway</a>
+  <a href="#experiences">Experiences</a>
+  <a href="#camp">The Bivouac</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#stories">Stories</a>
+  <a href="#book" class="btn btn-solid">Reserve</a>
+</div>
+
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-shade"></div>
+  <div class="hero-content">
+    <div class="hero-ar" dir="rtl">فوم زكيد — حيث تبدأ الصحراء</div>
+    <span class="hero-eyebrow">Foum Zguid · The Moroccan Sahara</span>
+    <h1>The Desert, <em>Refined</em> to Its Purest Light</h1>
+    <p class="hero-sub">Private camel expeditions to Erg Chegaga, candle-lit dinners on the dunes and bivouacs dressed like palaces — hosted by the desert's own family of guides.</p>
+    <div class="hero-cta">
+      <a href="#book" class="btn btn-solid">Reserve Your Journey</a>
+      <a href="#experiences" class="btn btn-light">View Experiences</a>
+    </div>
+  </div>
+  <div class="hero-scroll"><span>Scroll</span><div class="rail"></div></div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <div class="marquee-group">
+      <span>Erg Chegaga Expeditions</span><i>✦</i><span>Candle-Lit Dune Dinners</span><i>✦</i><span>Luxury Bivouac Nights</span><i>✦</i><span>4×4 Sahara Safaris</span><i>✦</i><span>Stargazing Under the Milky Way</span><i>✦</i><span>Berber Hospitality</span><i>✦</i><span>Lake Iriki &amp; Fossil Trails</span><i>✦</i><span>Sandboarding at Sunset</span><i>✦</i>
+    </div>
+    <div class="marquee-group">
+      <span>Erg Chegaga Expeditions</span><i>✦</i><span>Candle-Lit Dune Dinners</span><i>✦</i><span>Luxury Bivouac Nights</span><i>✦</i><span>4×4 Sahara Safaris</span><i>✦</i><span>Stargazing Under the Milky Way</span><i>✦</i><span>Berber Hospitality</span><i>✦</i><span>Lake Iriki &amp; Fossil Trails</span><i>✦</i><span>Sandboarding at Sunset</span><i>✦</i>
+    </div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-img" data-reveal>
+        <div class="frame"></div>
+        <img src="https://image.qwenlm.ai/public_source/1fddffd9-0ffd-43f8-95a3-f974706c66e8/1d5ff85fd-a7a7-4ce1-a52e-e4545455de1e.png" alt="Kasbah and palm oasis of Foum Zguid">
+      </div>
+      <div class="about-txt" data-reveal>
+        <span class="eyebrow">The Gateway to the Sahara</span>
+        <h2 class="sec-title">An Ancient Oasis at the <em>Edge of Silence</em></h2>
+        <p style="margin-top:26px">Between the Anti-Atlas mountains and the boundless dunes lies <strong>Foum Zguid</strong> — a palm-cradled oasis on the old caravan routes, and the most elegant door to the Moroccan Sahara.</p>
+        <p>From here we lead you across the white mirror of Lake Iriki, over fossil-strewn plains and into the golden cathedral of <strong>Erg Chegaga</strong>. Days move at camel pace; nights belong to the fire, the drums and a sky with no end.</p>
+        <p>Foum Zguid Trip is a family house of desert guides. Every journey is private, every detail considered — from the weave of your tent to the last glass of mint tea.</p>
+        <div class="signature">“The desert does not hurry, yet everything is accomplished.”<small>— Saharan proverb</small></div>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat" data-reveal><div class="stat-num"><span class="count" data-count="12">0</span><sup>+</sup></div><div class="stat-label">Years of Guiding</div></div>
+      <div class="stat" data-reveal><div class="stat-num"><span class="count" data-count="4800">0</span><sup>+</sup></div><div class="stat-label">Happy Travellers</div></div>
+      <div class="stat" data-reveal><div class="stat-num"><span class="count" data-count="49" data-decimals="1">0</span><sup>★</sup></div><div class="stat-label">Average Rating</div></div>
+      <div class="stat" data-reveal><div class="stat-num"><span class="count" data-count="30">0</span><sup>+</sup></div><div class="stat-label">Curated Experiences</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="experiences">
+  <div class="wrap">
+    <div class="exp-head">
+      <div data-reveal>
+        <span class="eyebrow">Curated Journeys</span>
+        <h2 class="sec-title">Signature <em>Experiences</em></h2>
+      </div>
+      <p data-reveal>Each journey is private by design and tailored to your pace — tell us your dream, and our guides will compose the desert around it.</p>
+    </div>
+    <div class="exp-grid">
+      <article class="card" data-reveal>
+        <div class="card-img"><span class="card-tag">3 Days · Camel Trek</span><img src="https://image.qwenlm.ai/public_source/9cb1244a-3e25-455d-99a1-0970e311f99f/12de0ba45-a6d2-4450-938b-87bc5d22deac.png" alt="Erg Chegaga camel expedition"></div>
+        <div class="card-body">
+          <h3 class="card-title">Erg Chegaga Camel Expedition</h3>
+          <p class="card-desc">Three days at caravan pace into the great dunes — sleeping in private bivouacs, dining by firelight beneath the Milky Way.</p>
+          <div class="card-foot"><span class="price"><small>From</small>€290</span><a class="card-link" href="#book">Reserve →</a></div>
+        </div>
+      </article>
+      <article class="card" data-reveal>
+        <div class="card-img"><span class="card-tag">Evening · Private</span><img src="https://image.qwenlm.ai/public_source/1fddffd9-0ffd-43f8-95a3-f974706c66e8/16ebc1d90-a2c5-4988-976a-4ad2cd2ae054.png" alt="Candlelit dinner on the dunes"></div>
+        <div class="card-body">
+          <h3 class="card-title">Private Dinner on the Dunes</h3>
+          <p class="card-desc">A candle-lit table set in the sand — linen, brass lanterns and a chef's menu as the sky turns from amber to violet.</p>
+          <div class="card-foot"><span class="price"><small>From</small>€110</span><a class="card-link" href="#book">Reserve →</a></div>
+        </div>
+      </article>
+      <article class="card" data-reveal>
+        <div class="card-img"><span class="card-tag">Full Day · 4×4</span><img src="https://image.qwenlm.ai/public_source/9cb1244a-3e25-455d-99a1-0970e311f99f/1558f58e1-9040-4bc7-9a8e-ab609b503204.png" alt="4x4 Sahara safari"></div>
+        <div class="card-body">
+          <h3 class="card-title">4×4 Sahara Safari</h3>
+          <p class="card-desc">Cross Lake Iriki's white expanse, hunt fossil beds and ride the dune seas in a private air-conditioned expedition vehicle.</p>
+          <div class="card-foot"><span class="price"><small>From</small>€95</span><a class="card-link" href="#book">Reserve →</a></div>
+        </div>
+      </article>
+      <article class="card" data-reveal>
+        <div class="card-img"><span class="card-tag">2 Days · 1 Night</span><img src="https://image.qwenlm.ai/public_source/9cb1244a-3e25-455d-99a1-0970e311f99f/167bb9ac6-14ee-4863-8c73-f8e6d577eb79.png" alt="Luxury bivouac stargazing"></div>
+        <div class="card-body">
+          <h3 class="card-title">Luxury Bivouac &amp; Stargazing</h3>
+          <p class="card-desc">A candle-lit night in a dressed Berber tent, with an astronomy guide, Gnawa music and a sunrise breakfast on the dune crest.</p>
+          <div class="card-foot"><span class="price"><small>From</small>€120</span><a class="card-link" href="#book">Reserve →</a></div>
+        </div>
+      </article>
+      <article class="card" data-reveal>
+        <div class="card-img"><span class="card-tag">Half Day · Adventure</span><img src="https://image.qwenlm.ai/public_source/9cb1244a-3e25-455d-99a1-0970e311f99f/1d9c41d86-aa5b-4300-bd4d-6961ee292877.png" alt="Sandboarding on dunes"></div>
+        <div class="card-body">
+          <h3 class="card-title">Sandboarding at Tinfou</h3>
+          <p class="card-desc">Carve the golden slopes as the light turns to amber — boards, tea and transport elegantly arranged.</p>
+          <div class="card-foot"><span class="price"><small>From</small>€60</span><a class="card-link" href="#book">Reserve →</a></div>
+        </div>
+      </article>
+      <article class="card" data-reveal>
+        <div class="card-img"><span class="card-tag">Full Day · Heritage</span><img src="https://image.qwenlm.ai/public_source/1fddffd9-0ffd-43f8-95a3-f974706c66e8/1d5ff85fd-a7a7-4ce1-a52e-e4545455de1e.png" alt="Kasbah oasis and fossil trail"></div>
+        <div class="card-body">
+          <h3 class="card-title">Kasbah, Oasis &amp; Fossil Trail</h3>
+          <p class="card-desc">Walk the palm groves, the old kasbah and prehistoric engraving sites where the Sahara still keeps its ancient sea.</p>
+          <div class="card-foot"><span class="price"><small>From</small>€75</span><a class="card-link" href="#book">Reserve →</a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="camp">
+  <div class="wrap camp-grid">
+    <div class="camp-visual" data-reveal>
+      <img class="camp-main" src="https://image.qwenlm.ai/public_source/9cb1244a-3e25-455d-99a1-0970e311f99f/1762a0723-3b98-4ed5-8bb4-f4392c1046ea.png" alt="Luxury desert camp at night">
+      <img class="camp-small" src="https://image.qwenlm.ai/public_source/9cb1244a-3e25-455d-99a1-0970e311f99f/1dbf74fa6-6d27-49b7-a349-c383cc79e303.png" alt="Luxury tent interior">
+    </div>
+    <div data-reveal>
+      <span class="eyebrow">The Luxury Bivouac</span>
+      <h2 class="sec-title">A Palace of Wool &amp; Starlight, <em>in the Deep Desert</em></h2>
+      <ul class="amenities">
+        <li>King-size beds in handwoven Berber tents</li>
+        <li>Crisp linen, rugs &amp; brass lanterns</li>
+        <li>Gourmet Saharan cuisine, private chef</li>
+        <li>Ensuite bathroom &amp; warm shower</li>
+        <li>Private campfire &amp; Gnawa music nights</li>
+        <li>Astronomy-grade stargazing lounges</li>
+        <li>Camel &amp; 4×4 private transfers</li>
+        <li>Sunrise breakfast on the dune crest</li>
+      </ul>
+      <div class="camp-note"><b>Private by default.</b> The camp is reserved exclusively for your party — couples, families or small circles of friends. Twelve guests at most, never more.</div>
+      <div style="margin-top:34px"><a href="#book" class="btn btn-solid">Reserve a Night</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div style="text-align:center" data-reveal>
+      <span class="eyebrow" style="justify-content:center">Moments</span>
+      <h2 class="sec-title">Postcards from <em>the Sahara</em></h2>
+    </div>
+    <div class="g-grid">
+      <figure class="g-item g-w2" data-reveal><img src="https://image.qwenlm.ai/public_source/1fddffd9-0ffd-43f8-95a3-f974706c66e8/132d416bc-ed70-4a62-9821-68e2a19d40f6.png" alt="Guide with camels at sunrise"><figcaption>The Caravan · First Light</figcaption></figure>
+      <figure class="g-item g-h2" data-reveal><img src="https://image.qwenlm.ai/public_source/9cb1244a-3e25-455d-99a1-0970e311f99f/167bb9ac6-14ee-4863-8c73-f8e6d577eb79.png" alt="Milky way over dunes"><figcaption>Under the Milky Way</figcaption></figure>
+      <figure class="g-item" data-reveal><img src="https://image.qwenlm.ai/public_source/1fddffd9-0ffd-43f8-95a3-f974706c66e8/16ebc1d90-a2c5-4988-976a-4ad2cd2ae054.png" alt="Dune dinner"><figcaption>Dinner at Dusk</figcaption></figure>
+      <figure class="g-item" data-reveal><img src="https://image.qwenlm.ai/public_source/1fddffd9-0ffd-43f8-95a3-f974706c66e8/17032bebd-3040-4034-bae4-234d9edf0165.png" alt="Dune ripples"><figcaption>Wind-Written Sand</figcaption></figure>
+      <figure class="g-item" data-reveal><img src="https://image.qwenlm.ai/public_source/9cb1244a-3e25-455d-99a1-0970e311f99f/1bdef5555-2e3f-47b3-8866-b451dc9bcbe9.png" alt="Mint tea ceremony"><figcaption>The Ritual of Tea</figcaption></figure>
+      <figure class="g-item g-w2" data-reveal><img src="https://image.qwenlm.ai/public_source/9cb1244a-3e25-455d-99a1-0970e311f99f/1762a0723-3b98-4ed5-8bb4-f4392c1046ea.png" alt="Camp under stars"><figcaption>The Bivouac · Night</figcaption></figure>
+      <figure class="g-item" data-reveal><img src="https://image.qwenlm.ai/public_source/9cb1244a-3e25-455d-99a1-0970e311f99f/1d9c41d86-aa5b-4300-bd4d-6961ee292877.png" alt="Sandboarding"><figcaption>Riding the Sand</figcaption></figure>
+      <figure class="g-item" data-reveal><img src="https://image.qwenlm.ai/public_source/9cb1244a-3e25-455d-99a1-0970e311f99f/1dbf74fa6-6d27-49b7-a349-c383cc79e303.png" alt="Tent interior"><figcaption>Wool, Brass &amp; Linen</figcaption></figure>
+      <figure class="g-item" data-reveal><img src="https://image.qwenlm.ai/public_source/1fddffd9-0ffd-43f8-95a3-f974706c66e8/1d5ff85fd-a7a7-4ce1-a52e-e4545455de1e.png" alt="Kasbah and palms"><figcaption>The Oasis · Morning</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="stories">
+  <div class="wrap">
+    <div style="text-align:center" data-reveal>
+      <span class="eyebrow" style="justify-content:center">Guest Stories</span>
+      <h2 class="sec-title">Written in Sand, <em>Kept in Hearts</em></h2>
+    </div>
+    <div class="story-grid">
+      <div class="story" data-reveal>
+        <span class="qmark">”</span>
+        <div class="stars-row">★★★★★</div>
+        <blockquote>The most magical night of our lives — the dunes, the drums, the infinite stars. Foum Zguid Trip turned our honeymoon into a legend.</blockquote>
+        <div class="story-author">Emma &amp; James</div>
+        <div class="story-origin">United Kingdom · via Tripadvisor</div>
+      </div>
+      <div class="story" data-reveal>
+        <span class="qmark">”</span>
+        <div class="stars-row">★★★★★</div>
+        <blockquote>From the first message to the last glass of mint tea, everything was flawless. The luxury camp exceeded every expectation we had.</blockquote>
+        <div class="story-author">Lucas M.</div>
+        <div class="story-origin">France · via Tripadvisor</div>
+      </div>
+      <div class="story" data-reveal>
+        <span class="qmark">”</span>
+        <div class="stars-row">★★★★★</div>
+        <blockquote>I have crossed many deserts with many guides. None have moved me like this one. True professionals, true hospitality.</blockquote>
+        <div class="story-author">Sofía R.</div>
+        <div class="story-origin">Spain · via Tripadvisor</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="book">
+  <div class="wrap book-grid">
+    <div class="book-info" data-reveal>
+      <span class="eyebrow">Reservations</span>
+      <h2 class="sec-title">Begin Your <em>Journey</em></h2>
+      <p>Share your dates and your dream — a personal desert concierge will reply within 24 hours with a tailored itinerary and a secure PayPal reservation link. We keep everything in writing, so every detail of your journey stays documented.</p>
+      <div class="contact-row">
+        <div class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></div>
+        <div><div class="lbl">Write to Us</div><div class="val">hello@foumzguidtrip.com</div></div>
+      </div>
+      <div class="contact-row">
+        <div class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div><div class="lbl">Home</div><div class="val">Foum Zguid, Tata Province — Morocco</div></div>
+      </div>
+      <div class="contact-row">
+        <div class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+        <div><div class="lbl">Concierge Hours</div><div class="val">Daily · 8:00 — 22:00 (GMT+1)</div></div>
+      </div>
+      <div class="assurances">
+        <span>24h Written Reply</span><span>PayPal Secure Deposit</span><span>Free Cancellation · 7 Days</span><span>Private Groups Only</span>
+      </div>
+    </div>
+    <form class="book-form" id="reserveForm" data-reveal novalidate>
+      <div class="form-row">
+        <div class="field"><label for="rvName">Full Name</label><input id="rvName" type="text" placeholder="Your name" required></div>
+        <div class="field"><label for="rvEmail">Email</label><input id="rvEmail" type="email" placeholder="you@email.com" required></div>
+      </div>
+      <div class="form-row">
+        <div class="field"><label for="rvDate">Arrival Date</label><input id="rvDate" type="date" required></div>
+        <div class="field"><label for="rvGuests">Guests</label><select id="rvGuests"><option>1 – 2 Guests</option><option>3 – 5 Guests</option><option>6 – 8 Guests</option><option>Private Camp (9+)</option></select></div>
+      </div>
+      <div class="field"><label for="rvExp">Experience</label>
+        <select id="rvExp">
+          <option>Erg Chegaga Camel Expedition</option>
+          <option>Private Dinner on the Dunes</option>
+          <option>4×4 Sahara Safari</option>
+          <option>Luxury Bivouac &amp; Stargazing</option>
+          <option>Sandboarding at Tinfou</option>
+          <option>Kasbah, Oasis &amp; Fossil Trail</option>
+          <option>Bespoke Journey — Craft It for Me</option>
+        </select>
+      </div>
+      <div class="field"><label for="rvMsg">Your Dream (Optional)</label><textarea id="rvMsg" placeholder="Anniversaries, photography, slow pace, special meals… tell us everything."></textarea></div>
+      <button type="submit" class="btn btn-solid" style="width:100%">Request Reservation</button>
+      <div class="form-success" id="reserveSuccess">
+        <div class="check">✦</div>
+        <div class="big">Your journey has begun</div>
+        <p>Thank you — your request is with our desert concierge.<br>Expect a personal written reply within 24 hours.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#hero" class="logo" style="color:var(--ivory)"><span class="dia">✦</span><span>Foum Zguid<br><small>T R I P</small></span></a>
+        <p>Luxury Saharan expeditions from the gateway oasis — private, unhurried and crafted by the desert's own family of guides.</p>
+        <div class="foot-ar" dir="rtl">فوم زكيد تريب — حيث تبدأ الصحراء</div>
+      </div>
+      <div>
+        <div class="foot-title">Explore</div>
+        <div class="foot-links">
+          <a href="#about">The Gateway</a>
+          <a href="#experiences">Experiences</a>
+          <a href="#camp">The Luxury Bivouac</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#stories">Guest Stories</a>
+          <a href="#book">Reservations</a>
+        </div>
+      </div>
+      <div>
+        <div class="foot-title">Concierge</div>
+        <div class="foot-links">
+          <a href="mailto:hello@foumzguidtrip.com">hello@foumzguidtrip.com</a>
+          <a href="#book">Foum Zguid, Tata — Morocco</a>
+          <a href="#book">Daily · 8:00 — 22:00 (GMT+1)</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yearNow">2025</span> Foum Zguid Trip — All rights reserved</span>
+      <span>Crafted under the Saharan stars <i>✦</i></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var topBarEl = document.getElementById('topbar');
+  var syncBar = function(){ topBarEl.classList.toggle('scrolled', window.scrollY > 40); };
+  window.addEventListener('scroll', syncBar, {passive:true});
+  syncBar();
+
+  var burgerEl = document.getElementById('burgerBtn');
+  var sideMenuEl = document.getElementById('sideMenu');
+  burgerEl.addEventListener('click', function(){
+    burgerEl.classList.toggle('active');
+    sideMenuEl.classList.toggle('open');
+    document.body.style.overflow = sideMenuEl.classList.contains('open') ? 'hidden' : '';
+  });
+  sideMenuEl.querySelectorAll('a').forEach(function(menuLink){
+    menuLink.addEventListener('click', function(){
+      burgerEl.classList.remove('active');
+      sideMenuEl.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+
+  var revealObs = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        entry.target.classList.add('revealed');
+        revealObs.unobserve(entry.target);
+      }
+    });
+  }, {threshold:.14});
+  document.querySelectorAll('[data-reveal]').forEach(function(el, idx){
+    el.style.transitionDelay = (idx % 3) * 0.12 + 's';
+    revealObs.observe(el);
+  });
+
+  var runCount = function(el){
+    var targetVal = parseFloat(el.getAttribute('data-count'));
+    var decVal = parseInt(el.getAttribute('data-decimals') || '0', 10);
+    var startTs = null, durMs = 2000;
+    var tick = function(ts){
+      if(!startTs) startTs = ts;
+      var prog = Math.min((ts - startTs) / durMs, 1);
+      var eased = 1 - Math.pow(1 - prog, 3);
+      var cur = targetVal * eased;
+      if(decVal > 0){ el.textContent = (cur / Math.pow(10, decVal)).toFixed(decVal); }
+      else { el.textContent = Math.floor(cur).toLocaleString('en-US'); }
+      if(prog < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  };
+  var countObs = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        runCount(entry.target);
+        countObs.unobserve(entry.target);
+      }
+    });
+  }, {threshold:.6});
+  document.querySelectorAll('.count').forEach(function(el){ countObs.observe(el); });
+
+  var reserveFormEl = document.getElementById('reserveForm');
+  var reserveOkEl = document.getElementById('reserveSuccess');
+  reserveFormEl.addEventListener('submit', function(ev){
+    ev.preventDefault();
+    var nameTxt = document.getElementById('rvName').value.trim();
+    var mailTxt = document.getElementById('rvEmail').value.trim();
+    var dateTxt = document.getElementById('rvDate').value;
+    if(!nameTxt || !mailTxt || !dateTxt){
+      ['rvName','rvEmail','rvDate'].forEach(function(fid){
+        var inp = document.getElementById(fid);
+        if(!inp.value.trim()){ inp.style.borderColor = '#b0563f'; setTimeout(function(){ inp.style.borderColor=''; }, 1800); }
+      });
+      return;
+    }
+    reserveFormEl.querySelectorAll('.form-row, .field, button[type="submit"]').forEach(function(el){ el.style.display = 'none'; });
+    reserveOkEl.style.display = 'block';
+  });
+
+  document.getElementById('yearNow').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
